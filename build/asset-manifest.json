@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5d122f6e.css",
+    "main.js": "/static/js/main.22a101b4.js",
+    "static/media/gabarito-latin-wght-normal.woff2": "/static/media/gabarito-latin-wght-normal.a899364f822e559e7378.woff2",
+    "static/media/gabarito-latin-ext-wght-normal.woff2": "/static/media/gabarito-latin-ext-wght-normal.766f1d20a349056034d2.woff2",
+    "index.html": "/index.html",
+    "main.5d122f6e.css.map": "/static/css/main.5d122f6e.css.map",
+    "main.22a101b4.js.map": "/static/js/main.22a101b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d122f6e.css",
+    "static/js/main.22a101b4.js"
+  ]
+}

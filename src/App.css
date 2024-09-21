@@ -1,0 +1,19 @@
+body {
+  background-color: #97b6cd;
+}
+
+  .app-header {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    padding-right: 20%;
+    padding-left:20%;
+  }
+  .app-header p{
+    font-size: medium;
+    color: #2f4c61;
+  }
+    img{
+      width:500px;
+      height:auto;
+    }

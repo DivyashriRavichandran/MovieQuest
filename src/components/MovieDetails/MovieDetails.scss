@@ -1,0 +1,141 @@
+// Variables
+$background-color: #2f4c61;
+$border-radius: 10px;
+$padding: 20px;
+$text-color:white;
+$max-width: 1000px;
+$max-img-width: 300px;
+$transition-duration: 0.3s;
+$trailer-aspect-ratio: 16 / 9; // Aspect ratio for the trailer (16:9)
+
+// Movie Details Container
+.movie-details {
+  background: $background-color;
+  border-radius: $border-radius;
+  padding: $padding;
+  color: $text-color;
+  max-width: $max-width;
+  margin: 20px auto;
+  transition: background $transition-duration ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background: #365973;
+  }
+
+  .details-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 20px; 
+    
+    img {
+      border-radius: $border-radius;
+      width: 100%;
+      max-width: $max-img-width;
+      height: auto;
+      transition: transform $transition-duration ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .movie-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .info-list {
+        font-size: 1.1rem;
+        width: 100%;
+        align-items: center;
+        text-align: center; 
+
+        p {
+          margin-top: 5%;
+          font-size: 1.1rem;
+
+          strong {
+            font-weight: bold;
+          }
+        }
+
+        .summary-text {
+          display: block;
+          margin-top: 2%;
+          align-items: center;
+          text-align: center; 
+        }
+      }
+    }
+  }
+
+  .trailer-container {
+    text-align: center;
+    width: 100%; 
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      border-radius: $border-radius;
+      width: 100%;
+      height: calc(100% / #{$trailer-aspect-ratio});
+      aspect-ratio: #{$trailer-aspect-ratio};
+      max-height: 500px; 
+    }
+  }
+}
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+
+  .star {
+    font-size: 1.5rem; 
+    color: #ffd700; // Gold color for stars
+    position: relative;
+    display: inline-block;
+
+    &.full-star {
+      color: #ffd700;
+    }
+
+    &.half-star {
+      position: relative;
+      color: #f0f0f0; // Ensure the star background is gray for the unfilled part
+      &::before {
+        content: '★';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%; // Cover only half of the star
+        overflow: hidden;
+        color: #ffd700; // Gold color for the filled part
+      }
+    }
+
+    &.empty-star {
+      color: #f0f0f0; // Light gray color for empty stars
+    }
+  }
+}
+
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    .details-container {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+
+    }
+  }
+
