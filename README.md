@@ -1,9 +1,5 @@
-# MovieQuest App
+ ## :rocket: Live Website - [moviequest-app.netlify.app](https://divyashri-portfolio.netlify.app/)
 
-## Find live demo here: 
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ ## To run locally:
+1. Open project directory and type `npm start` in your terminal.
+2. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
