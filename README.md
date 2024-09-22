@@ -1,4 +1,4 @@
- ## :rocket: Live Website - [moviequest-app.netlify.app](https://divyashri-portfolio.netlify.app/)
+ ## :rocket: Live Website - [moviequest-app.netlify.app](https://moviequest-app.netlify.app/)
 Movie database app that allows users to find movie information and trailers - all at one place.
 - Built using React.js and npm packages such `movie-info` and `movie-trailer`.
  ## To run locally:
